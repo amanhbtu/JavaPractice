@@ -1,9 +1,10 @@
-
+import java.util.*;
 public class loops {
 
 	public static void main(String[] args) {
 		loops l=new loops();
 		l.forLoop();
+		l.whileLoop();
 	}
 	public void forLoop() {
 		for(int i=1;i<=10;i++)
@@ -29,5 +30,27 @@ public class loops {
 		}
 	}
 	
-
+	public void whileLoop() {
+		int a=0;
+		while(a++<10) {
+			System.out.println(a);
+		}
+		
+		a=0;
+		
+		do {
+			System.out.println(a);
+		}while(a++<10);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Sum of n Number\nEnter n");
+		int num=sc.nextInt();
+		int sum=0;
+		while(num-->0) {
+			sum+=sc.nextInt();
+		}
+		System.out.println("Sum : "+sum);
+		
+	}
+	
 }
